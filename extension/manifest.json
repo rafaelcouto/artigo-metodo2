@@ -1,0 +1,20 @@
+{
+  // ID: fpjdmndllckjnbjejoabclbihbhahehe
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtSv8iCUEYVOaT1otssPyy9CSwEXgjI4NAih72k2J+Ot5l9eoRtVmpG3Ivo1EO/+u0GHKJImqcpF7oBzJyQZ9OZCMCJh1DRiAjCedXc7B/v6YGf4sDbf0XlzHfEJGVHd3zDv6suvXZAucp2KiMHzjZ/rDpYE+vb0jNYL/ZFcz5TzwLtgB1gYow0AtRUdtVSylDFQmZnah+08sf8TUH8gGOIkoEKCNCKXcHaACZ+QwSEOYdjO9iY//CMCLrX+puq2HzvxiH7TcVj2UPg8RaPUsOSrKXI6z/8j6TR0NfJtBTYS00XSjlRKO8RgWUJqdVhIxrA395KcQ/Zwge/+Bwv7vyQIDAQAB",
+  "name": "Extension",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Extensão para se comunicar com aplicação desktop",
+  "externally_connectable": {
+    "matches": ["*://localhost/*"]
+  },
+  "permissions": [
+    "nativeMessaging",
+    "*://localhost/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}

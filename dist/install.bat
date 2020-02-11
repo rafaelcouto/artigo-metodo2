@@ -1,0 +1,1 @@
+REG ADD "HKCU\Software\Google\Chrome\NativeMessagingHosts\io.rafaelcouto.app" /ve /t REG_SZ /d "D:\artigo\metodo2\dist\manifest.json" /f

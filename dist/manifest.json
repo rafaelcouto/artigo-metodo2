@@ -1,0 +1,9 @@
+{
+  "name": "io.rafaelcouto.app",
+  "description": "Aplicação desktop para fazer ponte entre extensão e o dispositivo SAT",
+  "path": "start.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://fpjdmndllckjnbjejoabclbihbhahehe/"
+  ]
+}
