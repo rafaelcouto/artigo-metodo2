@@ -25,18 +25,25 @@ export default {
   },
   methods: {
     consultar: function() {
-
-    this.result = null;
+      this.result = null;
       this.consultando = true;
+
+      let data = {
+        module: "sat",
+        device: "emulator",
+        action: "consultar"
+      };
+
+      console.log("Enviando dados para extensão");
+      console.log(data);
 
       chrome.runtime.sendMessage(
         "fpjdmndllckjnbjejoabclbihbhahehe",
-        {
-          module: "sat",
-          device: "emulator",
-          action: "consultar"
-        },
-        (response) => {
+        data,
+        response => {
+          console.log("Recebido resposta da extensão");
+          console.log(response);
+
           this.result = response;
           this.consultando = false;
         }
